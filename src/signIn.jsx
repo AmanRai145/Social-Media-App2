@@ -9,7 +9,7 @@ const SigninPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const signInuesr= () => {
+  const signInuesr = () => {
     signInWithEmailAndPassword(auth, email, password)
       .then((value) => console.log('SignIn Succses'))
       .catch((error) => console.error("Error creating user:", error));
