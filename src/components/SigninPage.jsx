@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import './index.css';
-import { appi } from "./firebase";
+import '../index.css';
+import { appi } from "../firebase";
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 
 const auth = getAuth(appi);

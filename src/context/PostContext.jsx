@@ -1,7 +1,5 @@
-// src/context/PostContext.js
-import { createContext, useState } from 'react';
 
-// Create a context (basket)
+import { createContext, useState } from 'react';
 export const PostContext = createContext();
 
 export const PostProvider = ({ children }) => {
@@ -16,7 +14,7 @@ export const PostProvider = ({ children }) => {
   };
   const deletePost = (id) => setPosts(posts.filter(post => post.id !== id));
 
-  // The 'basket' will hold both posts and user
+
   return (
     <PostContext.Provider value={{ posts, user, addPost, updatePost, deletePost, setUser }}>
       {children}
