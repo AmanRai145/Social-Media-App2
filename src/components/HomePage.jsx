@@ -8,9 +8,17 @@ const HomePage = () => {
 
   const handleAddPost = () => {
     const post = { id: Date.now(), content: newPost };
-    addPost(post); // Add the new post to the basket
-    setNewPost(''); // Clear the input
+    addPost(post); 
+    setNewPost(''); 
   };
+
+  const handleUpdatedPost = () => {
+    const id = post.id;  
+    const updatedPost = { content: newPost };  
+    updatePost(id, updatedPost);  
+    setNewPost("");  
+  };
+  
 
   return (
     <div>

@@ -7,7 +7,7 @@ export const PostProvider = ({ children }) => {
   const [posts, setPosts] = useState([]); // Manage posts
   const [user, setUser] = useState(null); // Manage user session
 
-  // Functions to modify the data
+  // Functions to modify the data  
   const addPost = (post) => setPosts([...posts, post]);
   const updatePost = (id, updatedPost) => {
     setPosts(posts.map(post => post.id === id ? updatedPost : post));
